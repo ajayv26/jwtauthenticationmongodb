@@ -1,18 +1,18 @@
 package helper
 
 import (
+	"context"
 	"fmt"
 	"jwtauth/database"
 	"log"
 	"os"
 	"time"
 
-	"github.com/dgrijalva/jwt-go"
+	jwt "github.com/dgrijalva/jwt-go"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"golang.org/x/net/context"
 )
 
 type SignedDetails struct {
